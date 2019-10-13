@@ -1,0 +1,10 @@
+<div class="row hub">
+    <div class="col-md-8 amount-calculation">
+        <app-amount-calculator (interestRate)="getInterestRate($event)"></app-amount-calculator>
+        <hr>
+        <app-amount-result [interestInfo]="getInterestAmout"></app-amount-result>
+    </div>
+    <div class="col-md-4 history">
+        <app-history [loanAmountInfo]="loadAmount"></app-history>
+    </div>
+</div>

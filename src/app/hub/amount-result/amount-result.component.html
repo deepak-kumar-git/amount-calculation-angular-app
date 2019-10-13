@@ -1,0 +1,18 @@
+<table class="table table-striped" aria-describedby="For interest amount and monthly payment">
+  <thead>
+    <tr>
+      <th scope="col">Interest Rate</th>
+      <th scope="col">Monthly Payment</th>
+    </tr>
+  </thead>
+  <tbody *ngIf=" interestAmount !== null">
+    <tr>
+      <td >
+        {{ interestAmount?.interestRate }}
+      </td>
+      <td>
+        {{ interestAmount?.monthlyPayment?.amount }}
+      </td>
+    </tr>
+  </tbody>
+</table>

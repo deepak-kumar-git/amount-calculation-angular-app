@@ -1,0 +1,21 @@
+<div class="container container-history">
+    <h3 class="history text-center">History</h3>
+    <table class="table table-striped" aria-describedby="For interest rate and monthly payment">
+        <thead>
+            <tr>
+                <th scope="col">Loan Amount</th>
+                <th scope="col">Duration</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let history of loanAmountInfo; i as index">
+            <tr (click)="getHistory(history)" style="cursor: pointer;">
+                <td>
+                    {{ history?.principal?.amount }}
+                </td>
+                <td>
+                    {{ history?.numPayments }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

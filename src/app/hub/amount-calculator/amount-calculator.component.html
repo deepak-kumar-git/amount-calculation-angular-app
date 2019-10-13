@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Amount</h3>
+            <input type="range" min="500" max="5000" class="slider" value="0"  [(ngModel)]="amount">
+            <p id="amountRange">{{amount}}</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Duration</h3>
+            <input type="number" name="duration" min="6" max="24" class="form-control" placeholder="Enter loan duration" [(ngModel)]="month">
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary btn-md" (click)="calculateAmount()">Submit</button>
+        </div>
+    </div>
+</div>
