@@ -9,9 +9,9 @@ import { InterestAmount } from './../../provider/interestAmount';
 })
 export class AmountCalculatorComponent implements OnInit {
   @Output() interestRate = new EventEmitter<any>();;
-  private amount: number = 500;
-  private month: number;
-  private loanAmount: Array<any> = [];
+  public amount: number = 500;
+  public month: number;
+  public loanAmount: Array<any> = [];
   constructor(
     private _interestAmount: InterestAmount,
     private _toaster : ToastrService

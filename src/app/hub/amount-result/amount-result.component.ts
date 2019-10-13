@@ -7,8 +7,8 @@ import { InterestAmount } from 'src/app/provider/interestAmount';
   styleUrls: ['./amount-result.component.scss']
 })
 export class AmountResultComponent implements OnChanges {
-  @Input() interestInfo: any;
-  private interestAmount: any;
+  @Input() public interestInfo: any;
+  public interestAmount: any;
   constructor(
     private _interestAmount: InterestAmount
   ) { }

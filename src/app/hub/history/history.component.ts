@@ -9,8 +9,8 @@ import { InterestAmount } from './../../provider/interestAmount';
   styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent {
-  @Input() loanAmountInfo: any;
-  loanAmount: any;
+  @Input() public loanAmountInfo: any;
+  public loanAmount: any;
   constructor(
     private _interestAmount: InterestAmount
   ) {

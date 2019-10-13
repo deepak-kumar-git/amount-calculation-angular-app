@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./hub.component.scss']
 })
 export class HubComponent implements OnInit {
-private getInterestAmout : any;
-private loadAmount : any;
+public getInterestAmout : any;
+public loadAmount : any;
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +15,7 @@ private loadAmount : any;
     this.loadAmount = JSON.parse(localStorage.getItem('loanAmount'));
   }
 
-  public getInterestRate(event){
+  private getInterestRate(event){
     this.getInterestAmout = event;
     this.loadAmount = JSON.parse(localStorage.getItem('loanAmount'));
   }
