@@ -15,7 +15,7 @@ export class HistoryComponent {
     private _interestAmount: InterestAmount
   ) {
   }
-  private getHistory(history) {
+  public getHistory(history) {
     this._interestAmount.changeLoanAmount(history);
   }
 }

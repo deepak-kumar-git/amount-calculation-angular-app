@@ -15,7 +15,7 @@ public loadAmount : any;
     this.loadAmount = JSON.parse(localStorage.getItem('loanAmount'));
   }
 
-  private getInterestRate(event){
+  public getInterestRate(event){
     this.getInterestAmout = event;
     this.loadAmount = JSON.parse(localStorage.getItem('loanAmount'));
   }

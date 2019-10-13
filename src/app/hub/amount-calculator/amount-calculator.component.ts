@@ -20,7 +20,7 @@ export class AmountCalculatorComponent implements OnInit {
   ngOnInit() {
   }
 
-  private calculateAmount() {
+  public calculateAmount() {
     if (this.validate()) {
       this._interestAmount.interestAmount(this.amount, this.month)
         .subscribe((res: any) => {
