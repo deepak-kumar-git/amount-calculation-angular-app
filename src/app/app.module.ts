@@ -12,7 +12,8 @@ import { HubComponent } from './hub/hub.component';
 import { AmountCalculatorComponent } from './hub/amount-calculator/amount-calculator.component';
 import { AmountResultComponent } from './hub/amount-result/amount-result.component';
 import { HistoryComponent } from './hub/history/history.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
+    // NgbModule.forRoot(),
+    NgbModule,
     FormsModule,
     HttpClientModule,
     CommonModule,
